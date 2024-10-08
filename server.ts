@@ -318,7 +318,7 @@ class ClsServidorTrivia {
 
   private cargarPreguntas() {
     try {
-      const Lv_archivoPreguntas = path.join(__dirname, 'questions.json');
+      const Lv_archivoPreguntas = path.join(__dirname, 'src/questions.json');
       const Lv_datosPreguntas = JSON.parse(fs.readFileSync(Lv_archivoPreguntas, 'utf-8'));
       this.Gv_preguntas = Lv_datosPreguntas.map((p: any) => new ClsPregunta(
         p.Lv_categoria,
