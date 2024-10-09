@@ -51,7 +51,7 @@ class ClsServidorTrivia {
     this.Gv_servidor = http.createServer(this.Lv_app);
     this.Gv_io = new Server(this.Gv_servidor, {
       cors: {
-        origin: "https://front-batalla-trival.vercel.app/",
+        origin: "http://localhost:5173",
         methods: ["GET", "POST"],
       },
     });
