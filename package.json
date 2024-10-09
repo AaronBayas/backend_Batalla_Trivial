@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.ts",
   "scripts": {
-    "start": "nodemon server.ts",
+    "start": "node server.ts",
     "dev": "nodemon server.ts",
     "build": "tsc && cp src/questions.json dist/"
   },
